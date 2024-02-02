@@ -35,8 +35,7 @@ function checkAnswer(currentLevel){
                 nextSequence();
             },1000);
         }
-    }
-    else{
+    }else{
         // console.log("wrong");
 
         playSound("wrong");
