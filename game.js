@@ -9,7 +9,7 @@ var userClickedPattern=[];
 
 $(document).keypress(function(){
     if(!started){
-        $(" # level-title ").text(" Level " + level);
+        $("#level-title ").text(" Level " + level);
         nextSequence();
         started=true;
     
@@ -80,10 +80,10 @@ function nextSequence(){
     $("#" + currentColor).removeClass("pressed");
    }, 100);
 }
-// function playSound(name) {
-//     var audio = new Audio("sounds/" + name + ".mp3");
-//     audio.play();
-//   }
+function playSound(name) {
+    var audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
+  }
   
 
    function startOver(){
@@ -109,5 +109,3 @@ function nextSequence(){
 
 
 
-//alert("hello");
-//$("h1").css("color","red");
